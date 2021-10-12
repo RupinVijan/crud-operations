@@ -42,12 +42,12 @@ readline.question('Option : ', opt => {
       });
   }
   else if(opt==="3"){
-    Kitten.findOneAndUpdate({desc:"rupin"},{$set:{name:"rupin vijan"}},function(err, doc){
+    Kitten.findOneAndUpdate({desc:"rupin"},{$set:{desc:"rupin vijan"}},function(err, doc){
       if(err){
           console.log("Something wrong when updating data!");
       }
     
-      console.log(Updated);
+      console.log("Updated");
     });
   }
   
